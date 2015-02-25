@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/vm"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150px"
+        android:paddingLeft="120px"
+        android:paddingRight="50px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.66"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/main_name"
+            android:textSize="100px"
+            android:textColor="#ffffff"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.33"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/main_amount"
+            android:textSize="100px"
+            android:layout_marginRight="50px"
+            android:textColor="#ffffff"
+             />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="260dp"
+        android:layout_height="235dp"
+        android:paddingTop="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="70px"
+        android:paddingBottom="20px"
+        android:background="@drawable/gridviewbg"
+        android:layout_gravity="center_horizontal"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll"
+
+         />
+
+    <Button
+        android:id="@+id/getSnack"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="I'm Feeling Lucky"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20px"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
